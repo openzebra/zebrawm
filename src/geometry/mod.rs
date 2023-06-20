@@ -22,8 +22,14 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-// use zebrawm::config;
+use rectangle::Rectangle;
 
-fn main() {
-    println!("Hello, world!");
+pub mod rectangle;
+
+// Returns true if a contains b
+pub fn contains(a: &Rectangle, b: &Rectangle) -> bool {
+    a.x <= b.x
+        && (a.x + a.width) >= (b.x + b.width)
+        && a.y <= b.y
+        && (a.y + a.height) >= (b.y + b.height)
 }

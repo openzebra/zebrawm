@@ -23,3 +23,5 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 pub mod config;
+pub mod geometry;
+pub mod pointer;

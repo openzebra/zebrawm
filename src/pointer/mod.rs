@@ -22,8 +22,17 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-// use zebrawm::config;
 
-fn main() {
-    println!("Hello, world!");
+pub struct Painter {
+    pub float_offset: f32,
+    pub last_frame: u32,
+}
+
+impl Painter {
+    pub fn new() -> Painter {
+        Painter {
+            float_offset: 0.0,
+            last_frame: 0,
+        }
+    }
 }
