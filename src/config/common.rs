@@ -22,9 +22,4 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
-// use zebrawm::config;
-
-fn main() {
-    println!("Hello, world!");
-}
+pub const SOCKET_PATH_TPL: &str = "/tmp/zwm{}_%i_%i-socket";
